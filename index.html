@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painer Bank</title>
-    <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+    <title>Paionier Bank</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boostrap/bootstrap.min.css">
 </head>
 <body>
-    
     <div id="login-area">
         <h1 class="text-center">Welcome To Painer Bank</h1>
 
@@ -22,7 +21,7 @@
             <input type="password" name="" id="" class="form-control" placeholder="Password">
             <br>
 
-            <button class="btn btn-success">
+            <button class="btn btn-success" id="login">
                 Enter
             </button>
 
@@ -30,9 +29,49 @@
 
     </div>
 
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="deposit stutas">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="currentDeposit">00</span> </h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw stutas">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id="currentWithdraw">00</span> </h2>
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="blance stutas">
+                    <h5>Blance</h5>
+                    <h2>$ <span id="totalBlance">00</span> </h2>
+                </div>
+            </div>
+        </div>
 
-    
+        <div class="row">
+           <div class="submit-area col-md-6">
+            <div class="">
+                <h4>Deposit</h4>
+                <input id="depositAdd" type="text" class="form-control" placeholder="$ Amount You Want To Deposit">
+                <br>
+                <button class="btn btn-success" id="deposit">Deposit</button>
+            </div>
+           </div>
+           <div class="submit-area col-md-6">
+            <div class="">
+                <h4>Withdraw</h4>
+                <input id="addwithdraw" type="text" class="form-control" placeholder="$ Amount You Want To Withdraw">
+                <br>
+                <button class="btn btn-success" id="withdraw">Withdraw</button>
+            </div>
+           </div>
+        </div>
+    </div>
 
 
+    <script src="script.js"></script>
 </body>
 </html>
